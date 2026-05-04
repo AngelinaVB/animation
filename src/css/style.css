@@ -1,0 +1,60 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.collapsible {
+  margin: 20px;
+  background-color: white;
+  padding: 50px;
+}
+
+button.start__btn {
+  width: 120px;
+  height: 35px;
+  background-color: blue;
+  border: 3px solid lightblue;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 8px;
+}
+
+p.widget__text {
+  border: 2px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.widget__body {
+  margin-top: 20px;
+  height: 0;
+  margin-bottom: -20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.active {
+  height: 350px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  transition: height 0.5s ease 0s;
+}
